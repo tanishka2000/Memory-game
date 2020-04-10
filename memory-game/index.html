@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Memory Game</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+      </script> 
+
+    </head>
+    <body>
+        <section class="score-timer-board">
+            <div class="score">
+                <p style="font-size: 20px; color:black; text-align:center">SCORE BOARD</p>
+                <p id="pintu">00</p>
+            </div>
+            <div class="play">
+              <button onclick="timer();">
+                <p style="font-size: 40px; color:blue; text-align:center">PLAY GAME</p>
+              </button>
+            </div>
+            <div class="play">
+              <button onClick="history.go(0)">
+                <p style="font-size: 40px; color:blue; text-align:center">REPLAY</p>
+              </button>
+            </div>
+        </section>
+        
+        
+
+        <section class="memory-game">
+                      <div class="memory-card" data-framework="aurelia">
+                        <img class="front-face" src="images/aurelia.svg" alt="Aurelia" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                      <div class="memory-card" data-framework="aurelia">
+                        <img class="front-face" src="images/aurelia.svg" alt="Aurelia" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                  
+                      <div class="memory-card" data-framework="vue">
+                        <img class="front-face" src="images/vue.svg" alt="Vue" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                      <div class="memory-card" data-framework="vue">
+                        <img class="front-face" src="images/vue.svg" alt="Vue" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                  
+                      <div class="memory-card" data-framework="angular">
+                        <img class="front-face" src="images/angular.svg" alt="Angular" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                      <div class="memory-card" data-framework="angular">
+                        <img class="front-face" src="images/angular.svg" alt="Angular" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                  
+                      <div class="memory-card" data-framework="ember">
+                        <img class="front-face" src="images/ember.svg" alt="Ember" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                      <div class="memory-card" data-framework="ember">
+                        <img class="front-face" src="images/ember.svg" alt="Ember" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                  
+                      <div class="memory-card" data-framework="backbone">
+                        <img class="front-face" src="images/backbone.svg" alt="Backbone" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                      <div class="memory-card" data-framework="backbone">
+                        <img class="front-face" src="images/backbone.svg" alt="Backbone" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                  
+                      <div class="memory-card" data-framework="react">
+                        <img class="front-face" src="images/react.svg" alt="React" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+                      <div class="memory-card" data-framework="react">
+                        <img class="front-face" src="images/react.svg" alt="React" />
+                        <img class="back-face" src="images/js-badge.svg" alt="JS Badge" />
+                      </div>
+        </section>
+        
+        <div id="container"> 
+          <div class="message"> 
+              <p style="font-size: 40px;font-style:bold; color:black; text-align:center">TIME UP!</p>
+              <p id="sco" style="font-size: 30px; color:white; text-align:center"></p>
+          </div> 
+          <div class="bts">
+          <button class="yes" onClick="history.go(0)">OKAY</button>
+          <button class="yes" onClick="history.go(0)" style="margin-left: 5%">REPLAY</button> </div>
+       </div> 
+
+        <section class="score-timer-board">
+          <div class="timer">
+                  <p style="font-size: 20px; color:black; text-align:center">TIMER</p>
+                  <p id="pin">40</p>
+          </div>
+      </section>
+        <script src="script.js"></script>
+
+    </body>
+</html>
